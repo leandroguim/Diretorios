@@ -17,6 +17,8 @@ try
     {
         Console.WriteLine(s);
     }
+
+    Directory.CreateDirectory(path + @"\newfolder");
 }
 catch(IOException e)
 {
