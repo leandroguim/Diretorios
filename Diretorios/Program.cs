@@ -10,6 +10,13 @@ try
     {
         Console.WriteLine(s); 
     }
+
+    var files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+    Console.WriteLine("FILES:");
+    foreach (string s in files)
+    {
+        Console.WriteLine(s);
+    }
 }
 catch(IOException e)
 {
